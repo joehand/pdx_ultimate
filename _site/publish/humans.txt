@@ -1,0 +1,18 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  <your title>: A <your name>Joe Hand
+  Site: joehand.org
+  Twitter: joe_smiles
+  Location: Portland, Oregon
+
+/* THANKS */
+  Names (& URL): Everyone
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery, Gridless (CSS)
+  Software:
+  
