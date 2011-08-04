@@ -1,12 +1,104 @@
----
-layout: main
-title: "Contact"
 
-home: true
-meta_description: 
----
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8" />
+	
 
-<div class="content home">
+	<!-- Site/Author Info Set in Config.yml file, Title/Descriptions set per page-->
+  	<title>Contact &middot; Portland Club Ultimate</title>
+  	<meta name="description" content="">
+  	<meta name="author" content="Joe Hand">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+
+  	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+
+	
+	<!-- CSS, path set in config file
+  ================================================== -->
+	<link rel="stylesheet" href="http://pdxultimate.org/assets/css/style.css">
+	
+	
+	<!-- Extra HEAD stuff  More ideas for your <head> here: h5bp.com/docs/#head-Tips
+  ================================================== -->
+  <!-- sitemap link -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+  <!-- prefetching for jQuery and fonts-->
+  <link rel="dns-prefetch" href="//ajax.googleapis.com" />
+	
+  <!-- prefetching specific to post-only pages -->
+	
+  <!-- end prefetching -->
+
+<!-- All JavaScript at the bottom, except for Modernizr and Respond. -->
+  <script src="http://pdxultimate.org/assets/js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="http://pdxultimate.org/assets/js/libs/respond.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="home">
+
+
+<nav class="img-nav">
+<h5 class="home-link"><a href="http://pdxultimate.org" title="Home"><img src="http://pdxultimate.org/assets/img/home.png" width=48 height=48/></a></h5>
+<ul class="tabs no-bullet floated clearfix"> 
+ 
+	
+  	<li><a href="/knifefight/">knifefight</a>	
+  	<img src="http://pdxultimate.org/assets/img/knifefight_logo.png" alt="knifefight"/></li>
+	
+ 
+	
+  	<li><a href="/rhino/">rhino</a>	
+  	<img src="http://pdxultimate.org/assets/img/rhino_logo.png" alt="rhino"/></li>
+	
+ 
+	
+  	<li><a href="/dogfight/">dogfight</a>	
+  	<img src="http://pdxultimate.org/assets/img/dogfight_logo.png" alt="dogfight"/></li>
+	
+ 
+	
+  	<li><a href="/schwa/">schwa</a>	
+  	<img src="http://pdxultimate.org/assets/img/schwa_logo.png" alt="schwa"/></li>
+	
+ 
+	
+  	<li><a href="/burnside/">burnside</a>	
+  	<img src="http://pdxultimate.org/assets/img/burnside_logo.png" alt="burnside"/></li>
+	
+ 
+</ul>
+</nav>
+
+ 
+	
+ 
+	
+ 
+	
+ 
+	
+ 
+	
+
+
+	<div class="content home">
 	
 	<script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
 
@@ -25,5 +117,47 @@ meta_description:
 
 <section class="portland remove-bottom">
 <h1 class="small-caps inset remove-bottom">pdx ultimate</h1>
-	<img class="remove-bottom"src="{{ site.imgpath }}/bridge.png" width="866" height="194" alt="Portland">
+	<img class="remove-bottom"src="http://pdxultimate.org/assets/img/bridge.png" width="866" height="194" alt="Portland">
 </section>
+
+
+</div>
+<!-- JS at the bottom for fast page loading
+================================================== -->
+
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="http://pdxultimate.org/assets/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+<!-- scripts (skeleton app.js inside plugins)-->
+<script src="http://pdxultimate.org/assets/js/plugins.js"></script>
+<script src="http://pdxultimate.org/assets/js/script.js"></script>
+<!-- end scripts-->
+
+
+
+<!-- Google Analytics, set ID in config.yml
+	 mathiasbynens.be/notes/async-analytics-snippet
+	================================================== -->
+	
+<script>
+  var _gaq=[["_setAccount","UA-20883592-4"],["_trackPageview"]];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+  g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+  s.parentNode.insertBefore(g,s)}(document,"script"));
+</script>
+
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+      chromium.org/developers/how-tos/chrome-frame-getting-started -->
+ <!--[if lt IE 7 ]>
+   <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+   <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+ <![endif]-->
+
+<!-- Twitter and Google+ Button JS -->
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+</body>
+</html>
+
