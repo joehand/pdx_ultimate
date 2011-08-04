@@ -1,0 +1,25 @@
+markdown: rdiscount
+pygments: true
+permalink: /:categories/:title
+
+home_url: http://pdxultimate.org
+
+jspath: http://pdxultimate.org/assets/js
+csspath: http://pdxultimate.org/assets/css
+imgpath: http://pdxultimate.org/assets/img
+
+name: "Portland Club Ultimate"
+author: "Joe Hand"
+
+google_analytics_ID: "UA-20883592-4"
+
+main_color: "148AFF"
+main_color_rgb: "0, 34, 68"
+background_color: "818A8F"
+background_color_rgb: "129, 138, 143"
+extra_color: "981E32"
+extra_color_rgb: "152, 30, 50"
+
+auto: true
+rdiscount:
+  extensions: [smart]

@@ -1,0 +1,15 @@
+
+<nav class="img-nav">
+<h5 class="home-link"><a href="{{ site.home_url }}" title="Home"><img src="{{ site.imgpath }}/home.png" width=48 height=48/></a></h5>
+<ul class="tabs no-bullet floated clearfix"> 
+{% for category in site.categories %} 
+	{% if page.url contains category[0] %}
+	<li class="active"><a href="/{{ category[0] }}/">{{ category[0] }}</a>
+  	<img src="{{ site.imgpath }}/{{ category[0] }}_logo.png" alt="{{ category[0] }}"/></li>
+	{% else %}
+  	<li><a href="/{{ category[0] }}/">{{ category[0] }}</a>	
+  	<img src="{{ site.imgpath }}/{{ category[0] }}_logo.png" alt="{{ category[0] }}"/></li>
+	{% endif %}
+{% endfor %} 
+</ul>
+</nav>

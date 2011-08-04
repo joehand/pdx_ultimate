@@ -1,0 +1,56 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8" />
+	
+
+	<!-- Site/Author Info Set in Config.yml file, Title/Descriptions set per page-->
+  	<title>{{ page.title }} &middot; {{ site.name }}</title>
+  	<meta name="description" content="{{ page.meta_description }}">
+  	<meta name="author" content="{{ site.author }}">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+
+  	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+
+	
+	<!-- CSS, path set in config file
+  ================================================== -->
+	<link rel="stylesheet" href="{{ site.csspath }}/style.css">
+	
+	
+	<!-- Extra HEAD stuff  More ideas for your <head> here: h5bp.com/docs/#head-Tips
+  ================================================== -->
+  <!-- sitemap link -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+  <!-- prefetching for jQuery and fonts-->
+  <link rel="dns-prefetch" href="//ajax.googleapis.com" />
+	
+  <!-- prefetching specific to post-only pages -->
+	{% if page.layout == 'post' %}
+  <!-- prefetching for share buttons-->
+  <link rel="dns-prefetch" href="//apis.google.com" />
+  <link rel="dns-prefetch" href="//platform.twitter.com" />
+  <!-- prefetching for disqus -->
+  <link rel="dns-prefetch" href="//{{ site.disqus_shortname }}.disqus.com" />	
+  {% endif %}
+  <!-- end prefetching -->
+
+<!-- All JavaScript at the bottom, except for Modernizr and Respond. -->
+  <script src="{{ site.jspath }}/libs/modernizr-2.0.6.min.js"></script>
+  <script src="{{ site.jspath }}/libs/respond.min.js"></script>
+
+</head>
+<body>
