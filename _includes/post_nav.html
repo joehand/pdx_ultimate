@@ -1,0 +1,11 @@
+<nav class="short">
+	{% for category in site.categories %} 
+		{% if page.url contains category[0] %}
+	<ul>	
+		{% for post in site.posts %}{% if post.url contains category[0] %}{% if page.url contains post.url %}
+		<li><a class="active" href="{{ site.home_url }}{{ post.url }}">{{ post.title }}</a></li>
+		{% else %}
+		<li><a href="{{ site.home_url }}{{ post.url }}">{{ post.title }}</a></li>
+		{% endif %}{% endif %}{% endfor %}
+	</ul>{% endif %}{% endfor %}
+</nav>

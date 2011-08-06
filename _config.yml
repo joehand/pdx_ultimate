@@ -2,11 +2,11 @@ markdown: rdiscount
 pygments: true
 permalink: /:categories/:title
 
-home_url: http://pdxultimate.org
+home_url: http://joehand.github.com/pdx_ultimate
 
-jspath: http://pdxultimate.org/assets/js
-csspath: http://pdxultimate.org/assets/css
-imgpath: http://pdxultimate.org/assets/img
+jspath: http://joehand.github.com/pdx_ultimate/assets/js
+csspath: http://joehand.github.com/pdx_ultimate/assets/css
+imgpath: http://joehand.github.com/pdx_ultimate/assets/img
 
 name: "Portland Club Ultimate"
 author: "Joe Hand"
@@ -23,3 +23,5 @@ extra_color_rgb: "152, 30, 50"
 auto: true
 rdiscount:
   extensions: [smart]
+
+best_of_order: [ 1, 2, 3, 4, 5 ]

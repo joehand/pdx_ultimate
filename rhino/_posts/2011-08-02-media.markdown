@@ -2,5 +2,8 @@
 layout: post 
 title: Media
 
+body_class: rhino
 meta_description: 
 ---
+
+<object type="application/x-shockwave-flash" width="800" height="600" data="http://vimeo.com/hubnut/?user_id=user8021651&amp;color=ffffff&amp;background=000000&amp;fullscreen=1&amp;slideshow=1&amp;stream=album&amp;id=1660836&amp;server=vimeo.com">	<param name="quality" value="best" />		<param name="allowfullscreen" value="true" />		<param name="allowscriptaccess" value="always" />	<param name="scale" value="showAll" />	<param name="movie" value="http://vimeo.com/hubnut/?user_id=user8021651&amp;color=ffffff&amp;background=000000&amp;fullscreen=1&amp;slideshow=1&amp;stream=album&amp;id=1660836&amp;server=vimeo.com" /></object>

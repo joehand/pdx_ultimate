@@ -4,40 +4,79 @@ title: "Welcome"
 
 home: true
 meta_description: 
+
+elements:
+  - categories: [mens]
+    number: 1
+    symbol: rhino_symbol.png
+    name: rhino
+    description: <img src=../assets/img/rhino_extra.jpg alt=Rhino><p>Rhino stands as Oregon's elite men's club team. Comprised of young raw athleticism and savvy veteran play, Rhino continues to grow by leaps and bounds. This year's goal is simple, earn a trip back to our native land in Sarasota FL.</p>
+  - categories: [womens]
+    number: 2
+    symbol: schwa_symbol.png
+    name: schwa
+    description: <img src=http://portlandultimate.org/sites/default/files/imagecache/Hero_Sidebar/schwa.jpg><p>Schwa is Portland's elite women's team. We travel around the Northwest to play against the regions other premier teams.</p>
+  - categories: [mens]
+    number: 3
+    symbol: knifefight_symbol.png
+    name: knife fight
+    description: "<img src=http://portlandultimate.org/sites/default/files/imagecache/Hero_Sidebar/knife_fight.jpg width=300 height=400><p>Knife Fight was founded in 2003 as a chance to give Portland-based college players a chance to team up with college-season rivals. Now heading into the 2011 season, Knife Fight is looking for young players who want to play high-level ultimate over the summer, and welcomes older players who want to help improve the pool of mens' club talent in Portland.</p>"
+  - categories: [mixed]
+    number: 4
+    symbol: dogfight_symbol.png
+    name: dogfight 
+    description: "<img src=http://portlandultimate.org/sites/default/files/imagecache/Hero_Sidebar/dogfight1.jpg width=300 height=400><p>Dogfight has earned bragging rights in the mixed ultimate world, beating national caliber teams last year. Our third season brings a solid crew of returners as well as talented new blood. Sarasota is in our sights! </p>"
+  - categories: [masters]
+    number: 5
+    symbol: burnside_symbol.png
+    name: burnside
+    description: "<img src=http://portlandultimate.org/sites/default/files/imagecache/Hero_Sidebar/burnsideultimate.jpg width=300 height=400><p>Burnside is entering their third campaign, aiming for a bid to Nationals after falling short in the game to go in 2010. Masters is open to any player that will turn 33 or older in this calendar year. We play Masters only pickup every weekend throughout the year, and then buckle down for actual practices in the weeks before tournaments.</p><p> We will be attending Solstice, Open Sectionals and Masters Regionals as well as putting on our own Masters tournament.</p>"
 ---
 
-<div class="content home">
-	
+<div class="home"> 
 	<section class="teams clearfix">
-		<h3>Portland Ultimate Frisbee Clubs</h3>
-		<article>
-		<h2><a href="{{site.home_url}}/rhino/">Rhino</a></h2>
-		<p>Rhino stands as Oregon's elite men's club team.  Comprised of young raw athleticism and savvy veteran play, Rhino continues to grow by leaps and bounds.</p>
-		</article>
-		<article>
-		<h2><a href="{{site.home_url}}/knifefight/">Knife Fight</a></h2>
-		<p>Knife Fight was founded in 2003 as a chance to give Portland-based college players a chance to team up with college-season rivals.</p>
-		</article>
-		<article>
-		<h2><a href="{{site.home_url}}/dogfight/">Dogfight</a></h2>
-		<p>Dogfight has earned bragging rights in the mixed ultimate world, beating national caliber teams last year.  Our third season brings a solid crew of returners as well as talented new blood</p>
-		</article>
-		<article>
-		<h2><a href="{{site.home_url}}/schwa/">Schwa</a></h2>
-		<p>Schwa is Portland's elite women's team. We travel around the Northwest to play against the regions other premier teams.</p>
-		</article>
-		<article>
-		<h2><a href="{{site.home_url}}/burnside/">Burnside</a></h2>
-		<p>Burnside is entering their third campaign, aiming for a bid to Nationals after falling short in the game to go in 2010. Masters is open to any player that will turn 33 or older in this calendar year.</p>
-		</article>
+		<div id="container" class="clearfix clickable">
+			<div id="options" class="element not-clickable pdx mens womens mixed masters">
+				<article>
+				<h3 class="small-caps inset remove-bottom">pdx ultimate</h3>
+					<p class="remove-bottom">Welcome to the home for <strong>Portland Ultimate Frisbee</strong> club teams. Click on a logo to find out more about the team. Sort by: </p>
+					<ul id="filters" class="remove-bottom floated option-set clearfix" data-option-key="filter">
+				        <li><a href="#filter=*" class="selected">portland&nbsp;</a></li>
+					        <li><a href="#filter=.mens">mens</a></li>
+				        <li><a href="#filter=.womens">womens</a></li>
+				        <li><a href="#filter=.mixed">mixed</a></li>
+				        <li><a href="#filter=.masters">masters</a></li>
+				      </ul>
+				</article>
+			</div>
+		    {% for element in page.elements %}
+		  {% capture classnames %}{% for cat in element.categories %}{{ cat }} {% endfor %} {% if page.infinite_scroll %} width2 height2 				  {% endif %} {% endcapture %}
+		      <div class="element {{ element.category }}{{ element.name }} {{ classnames }}" data-name="{{ element.name }}" data-category="{{ element.categories[0] }}">
+		        <h2 class="name">{{ element.category }}</h2>
+		        <div class="symbol"><img src="{{ site.imgpath }}/{{ element.symbol }}" alt="{{ category[0] }}"/></div>
+					<section class="description">
+					<h3><a class="team-page" href="{{ site.home_url }}/{{ element.name | remove: ' ' }}/">{{ element.name }}'s Team Page</a></h3><article>
+					{{ element.description }}
+					</article></section>
+					
+		      </div>
+		    {% endfor %}
+		
 	</section>
+	
+	
+				<div class="portland remove-bottom">
+					<img class="remove-bottom"src="{{ site.imgpath }}/bridge.png" width="866" height="194" alt="Portland"/>
+
+				</div>
+	
+	
+				<sectionclass="clearfix">
+
+				  </section> <!-- #options -->
 
 </div> <!-- end of #page-content -->
 
-<section class="portland remove-bottom">
-<h1 class="small-caps inset remove-bottom">pdx ultimate</h1>
-	<img class="remove-bottom"src="{{ site.imgpath }}/bridge.png" width="866" height="194" alt="Portland"/>
-</section>
 
 
 <footer>
@@ -45,3 +84,4 @@ meta_description:
 	<li>Made by <a href="http://joehand.org">Hand</a> |</li>
 	<li><a href="{{ site.home_url }}/contact/">Contact</a></li></ul>
 </footer>
+

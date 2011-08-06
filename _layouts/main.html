@@ -1,24 +1,19 @@
-
 {% include head.html %}
-
-<div class="{%if page.home == true %}home{% else %}other{% endif %}">
-
+<div class="{%if page.home == true %}home{% else %}other{% endif %} {% for category in site.categories %}{% if page.url contains category[0] %}{{ category[0] }}{% endif %}{% endfor %}">
 {% include navigation.html %}
 
-{% for category in site.categories %} 
-	{% if page.url contains category[0] %}
-	<header class="logo">
-  	<img src="{{ site.imgpath }}/{{ category[0] }}_logo.png" alt="{{ category[0] }}"/></li>
-	<h2>{{ page.title }}</h2>
+<section class="page-content">
+{% for category in site.categories %}{% if page.url contains category[0] %}
+	<header class="logo {{ category[0] }}">
+  	<a href="{{ site.home_url }}/{{ category[0] }}/"><img src="{{ site.imgpath }}/{{ category[0] }}_logo.png" alt="{{ category[0] }}"/></a>
 	</header>
-{% endif %}
-{% endfor %}
-
-	{{ content }}
-
-
-</div>
+{% endif %}{% endfor %}
+{% include post_nav.html %}
+{{ content }}
+</section><!-- end of #page-content -->
+</div><!-- end of other,home,teamname -->
 {% include js.html %}
+{%if page.home == true %}{% include isotop_js.html %}{% endif %}
 </body>
 </html>
 

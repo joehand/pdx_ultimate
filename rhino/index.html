@@ -2,22 +2,14 @@
 layout: main
 title: Rhino Men's Ultimate
 
-meta_description: 
+body_class: rhino
+meta_description:
 ---
 
-<div class="page-content">
-	
+<div class="content">
 
-<nav class="short">
-	
-	<ul>
-    {% for post in site.categories.rhino %}
+<object width="400" height="300"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=9429836&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=9429836&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="600" height="450"></embed></object><br /><br />
 
-		<li><a href="{{ site.home_url }}{{ post.url }}">{{ post.title }}</a></li>
-
-    {% endfor %}
-  </ul>
-</nav>
-	
-</div> <!-- end of #page-content -->
+{% include twitter.html %}
+</div> <!-- end of #content -->
 

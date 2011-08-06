@@ -64,6 +64,7 @@ a, a:active, a:visited {
 	border-bottom:1px solid #fff;
 }
 
+
 a:hover {
 	color: #981E32;
 	border-bottom:1px solid #148AFF;
@@ -320,18 +321,25 @@ td { vertical-align: top; }
 	/* #Tabs from www.getskeleton.com
 	================================================== */
 		ul.tabs { 
-			display: block;
+			position:absolute;
+			top:0px;
 			margin: 0px 0 20px 0;
 			padding: 0;
 			width:90%;
 			padding:0 5%;
 			border-bottom: solid 1px #ddd; }
-		ul.tabs li { 
-			display: block;
+		ul.tabs li { 	
+			display:block;
 			width: 100%;
 			height: 40px;
 			padding: 0;
-			margin-bottom: 0; }
+			margin-bottom: 0; 
+		     -moz-transition: all 0.3s ease-in-out 0.2s;  
+		       -o-transition: all 0.3s ease-in-out 0.2s;  
+		  -webkit-transition: all 0.3s ease-in-out 0.2s;  
+		      -ms-transition: all 0.3s ease-in-out 0.2s;  
+		          transition: all 0.3s ease-in-out 0.2s;  
+}
 		ul.tabs li a { 
 			text-transform:capitalize;
 			display: block; 
@@ -352,6 +360,7 @@ td { vertical-align: top; }
 			 }
 		ul.tabs li.active a,
 		.home ul.tabs li a:hover { 
+			opacity:1;
 			background: #fff; 
 			height: 40px;
 			position: relative;
@@ -372,6 +381,7 @@ td { vertical-align: top; }
 			box-shadow:inset 0px 1px 3px rgba(152, 30, 50, .3);
 		}	
 		.other ul.tabs li a:hover { 
+			opacity:1;
 			background: #fff; 
 			height: 40px;
 			position: relative;
@@ -445,11 +455,6 @@ body {
 	background-color:#fff;
 }
 
-.post {
-	width:80%;
-	margin:0 auto;
-}
-
 footer {
 	width:300px;
 	margin:0 auto;
@@ -457,6 +462,133 @@ footer {
 }
 
 
+.inset {
+	font-weight:bold;
+	color: rgba(0, 34, 68, .06);
+	  font-family: Rockwell, Georgia, "Times New Roman", Times, serif;
+	  text-shadow: rgba(0,0,0,0.15) -1px 0, rgba(255,255,255, 0.8) 0px 2px 1px, rgba(0, 34, 68,0.05) -1px -1px;
+	}
+	
+	.contact {
+		width:90%;
+		margin:0 auto;
+	}
+	
+	
+/* == ========================================
+	generic team pages styling
+========================================================================== */
+
+	
+	.logo img{
+		width:300px;
+		height:auto;
+	}
+	
+	.logo a{
+		border:none;
+	}
+	
+	.other .team-home {
+		display:none;
+	}
+	
+	.post .team-home {
+		display:block;
+	}
+	
+	.page-content {
+		width:100%;
+	}
+	
+	.content {
+		margin:20px 0;
+		text-align:left;
+	}
+	
+	.content article {
+		padding:10px 30px;
+	}
+	
+	.page-content object {
+		width:100%;
+	}
+	
+	aside.twitter {
+		max-width:450px;
+		margin:20px auto;
+	}
+	
+	/*all the sub navigation stuff*/
+	nav.short {
+		margin:10px 0;
+		height:75px;
+		width:100%;
+	}
+	
+	nav.short ul {
+		width:380px;
+		margin:0 auto;
+	}
+
+	nav.short li {
+	border-bottom:1px solid gray;
+	  float: left;
+	  margin-bottom: 0.2em;
+	}
+
+	nav.short li a {
+	  display: block;
+	  padding: 0.4em 0.5em;
+	  font-size:1.7em;
+	  font-weight: bold;
+	  text-shadow: 0 1px hsla( 0, 0%, 100%, 0.5 );
+	}
+	
+	
+	nav.short a.active {
+		color:#981E32;
+	}
+	
+/* == ========================================
+ 		specific team mods
+========================================================================== */	
+	/* == =========RHINO================== */
+	.rhino .logo img{
+		width:80%;
+		height:auto;
+		margin:20px auto 10px auto;
+		
+	}
+	
+	body.rhino,
+	.rhino .content, .rhino .page-content{
+		background-color: #000;
+		color: #cccccc;
+	}
+	
+	.rhino .page-content a {
+		color:#7C7D78;
+		border-color:#000;
+	     -moz-transition: all 0.5s ease-in-out;  
+	       -o-transition: all 0.5s ease-in-out;  
+	  -webkit-transition: all 0.5s ease-in-out;  
+	      -ms-transition: all 0.5s ease-in-out;  
+	          transition: all 0.5s ease-in-out;  
+	}
+	
+	.rhino nav.short a.active {
+		color:#fff;
+	}
+	
+	.rhino .page-content a:hover {
+		color:#3A7101;
+		border-color:#3A7101;
+	}
+	
+	.knifefight table {
+		margin:0 auto;
+	}
 	
 /* == ========================================
 article sytling
@@ -471,7 +603,7 @@ article sytling
 		border-top:3px solid rgba(129, 138, 143, .2); 
 		padding:.5em 0;
 		margin:1em 0;
-		width:400px;
+		width:95%;
 		margin:0 auto;
 	}
 
@@ -486,91 +618,285 @@ article sytling
 	
 	
 /* ==|== header navigation ========================================
-images on hover for homepage
+stays visible for homepage, hids for rest (in desktop mode)
 ========================================================================== */
 
-		.img-nav {
+	  .img-nav {
 			width:100%;
-			margin:0 auto;
 			position:relative;
+		     -moz-transition: all 0.5s ease-in-out 0.35s;  
+		       -o-transition: all 0.5s ease-in-out 0.35s;  
+		  -webkit-transition: all 0.5s ease-in-out 0.35s;  
+		      -ms-transition: all 0.5s ease-in-out 0.35s;  
+		          transition: all 0.5s ease-in-out 0.35s; 
+		 	background-color:#fff;
 		}
+		.home .img-nav h1 {
+			padding:35px 0 20px 0;
+			
+		}
+		
+		.other .img-nav h1 {
+			padding:200px 0 20px 0px;
+			font-size:2.5em;
+		}
+		
+		.other .img-nav h1 img {
+			display:none;
+		}
+		
+		
+		.img-nav ul li{	
+		border-bottom:rgba(152, 30, 50, .9) 2px solid;
+		}
+		
+		.img-nav ul li a{
+				opacity:.5;
+			     -moz-transition: all 0.5s ease-in-out 0.35s;  
+			       -o-transition: all 0.5s ease-in-out 0.35s;  
+			  -webkit-transition: all 0.5s ease-in-out 0.35s;  
+			      -ms-transition: all 0.5s ease-in-out 0.35s;  
+			          transition: all 0.5s ease-in-out 0.35s;  
+
+			
+		}
+		
+		.img-nav:hover ul li a{	
+			margin-top:0px;
+			display:block;
+			opacity:1;
+		}
+		
 		.home .img-nav {
-			padding-bottom:150px;
 		}
 
 		.img-nav img {
-			display:none;
 			width:200px;
 			height:auto;
-		}
-	
-		
-		.home .img-nav li:hover img {
-			display:block;
-			position:absolute;
-			top:210px;
-			vertical-align:bottom;
-			left:50%;
-			margin-left:-100px;
+				display:block;
+				float:left;
 		}
 		
-		header.logo {
-			width:80%;
-			margin:0 auto;
-		}
-		
-		.logo img {
-			width:100%;
-			height:auto;
-			max-width:350px;
-		}
 		.home-link {
 			display:none;
 			position:absolute;
 			left:0;
-			top:0px;
+			top:-2px;
 		}
-		/* Teams on homepage adjusment for larger screens
-		================================================== */
-		.home section.teams {
-			margin:0 auto;
-			width:350px;
-		}	
-		.teams article {
-			width:350px;
-			margin:10px 10px;
-			border-bottom:none;
+		
+		.home .img-nav h1 {
+			visibility:hidden;
 		}
+		
 		/* == ========================================
 		bridge section on bottom of homepage
 		========================================================================== */
-		section.portland {
-			z-index:0;
-			position:relative;
-			bottom:0px;
-			width:80%;
-			margin-left:-40%;
-			left:50%;
-			margin-bottom:-20px;
-		}
-
-		section.portland img {
+		
+		.portland img {
 			width:85%;
 			height:auto;
 		}
-
-		.inset {
-			font-weight:bold;
-			color: rgba(0, 34, 68, .06);
-			  font-family: Rockwell, Georgia, "Times New Roman", Times, serif;
-			  text-shadow: rgba(0,0,0,0.15) -1px 0, rgba(255,255,255, 0.8) 0px 2px 1px, rgba(0, 34, 68,0.05) -1px -1px;
+		
+		/* == ========================================
+		ISOTOPE STUFF for HOMEPAGE
+		========================================================================== */
+			
+			.teams {
+				margin-top:-100px;
 			}
 			
-			.contact {
+			/* Start: Recommended Isotope styles */
+			/* required for containers to inherit vertical size from window */
+			html,
+			body {
+			  height: 100%;
+			}
+			/**** Isotope Filtering ****/
+
+			.isotope-item {
+			  z-index: 2;
+			}
+
+			.isotope-hidden.isotope-item {
+			  pointer-events: none;
+			  z-index: 1;
+			}
+
+			/**** Isotope CSS3 transitions ****/
+
+			.isotope,
+			.isotope .isotope-item {
+			  -webkit-transition-duration: 0.8s;
+			     -moz-transition-duration: 0.8s;
+			          transition-duration: 0.8s;
+			}
+
+			.isotope {
+			  -webkit-transition-property: height, width;
+			     -moz-transition-property: height, width;
+			          transition-property: height, width;
+			}
+
+			.isotope .isotope-item {
+			  -webkit-transition-property: -webkit-transform, opacity;
+			     -moz-transition-property:    -moz-transform, opacity;
+			          transition-property:         transform, opacity;
+			}
+
+			/**** disabling Isotope CSS3 transitions ****/
+
+			.isotope.no-transition,
+			.isotope.no-transition .isotope-item,
+			.isotope .isotope-item.no-transition {
+			  -webkit-transition-duration: 0s;
+			     -moz-transition-duration: 0s;
+			          transition-duration: 0s;
+			}
+			#container {
+			  padding: 5px;
+			  padding-top:0px;
+			  width:370px;
+			  margin:0 auto;
+			}
+
+			.element {
+			  padding:0px;
+			  width: 360px;	
+			  height: 175px;
+			  margin:5px auto;
+			  position: relative;
+			  -webkit-border-top-right-radius: 1.2em;
+			      -moz-border-radius-topright: 1.2em;
+			          border-top-right-radius: 1.2em;
+			}
+
+			.element .symbol img {
+				width: auto;
+				height: 175px;
+				vertical-align:top;
+			}
+
+			
+			.element div.symbol {
+				width:95%;
+				margin:0 auto;
+			}
+			
+
+			.element .name {
+			}
+			
+
+			.element .description {
+			  display:none;
+			}
+			
+			.description img {
+				position:absolute;
+				right:0px;
+				top:15px;
+				max-width:35%;
+				height:auto;
+				margin:0px !important;
+			}
+			
+			.description h3 {
+				text-transform:capitalize;
+			}
+			
+			.description p {
+				width:60%;
+				
+			}
+			
+
+			.element.large {
+			  height: 80% !important;
+			  min-height:700px;
+			  width: 98% !important;
+			  z-index: 100;
+			 margin:0 auto;
+			}
+			
+		    .element.large .description {
+			   display:block;	
+			}
+			
+			.element.large .description article {
+				position:relative;
+			   text-align:left;
+			   padding-top:10px;
+			}
+			
+			.element.large .symbol {
+				height:160px;
+			}
+			
+			.element.large.rhino .symbol {
+				height:250px;
+			}
+			
+			.clickable .element:hover {
+			  cursor: pointer;
+			}
+			
+			.element.not-clickable:hover {
+				cursor: normal;
+			}
+			
+			.portland {
 				width:90%;
 				margin:0 auto;
 			}
-		
+			
+			.element.pdx {
+				height:250px;
+				padding-top:35px;
+			}
+			
+			.element.notselected {
+				opacity:0 !important;
+				width:0 !important;
+				height:0 !important;
+			}
+			/* hack for small logos */
+			.element.burnside {
+					height:100px;
+				}
+				
+			ul.option-set  {
+				text-align:center;
+				padding:0px;
+				width:270px;
+			}
+			
+			.option-set .selected {
+				display:none;
+				width:0px;
+			}
+			
+			ul.option-set li {
+				width:60px;
+			}
+			
+			/* Teams on homepage 
+			================================================== */
+
+			.teams article{
+				width:80%;
+				margin:0 auto;
+			 	text-align:left;
+			}
+
+			.home article p {
+			 	font-size:18px;
+			}
+
+			.teams article .inset {
+				font-size:2.5em;
+			}
+
+			/* End: Recommended Isotope styles */		
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
    ========================================================================== */
@@ -607,16 +933,45 @@ images on hover for homepage
 @media only screen and (min-width: 480px) {
 	/* Wide mobile (480px+) styles go here */
 		
+		#container {
+		}
 	
 }
 
 @media only screen and (min-width: 768px) { 
 	/* Tablets/netbooks (768px+) styles go here */
 	.post {
-		width:550px;
 	}
 	
+	/* == ========================================
+		team pages styling
+	========================================================================== */
+	.page-content {
+		width:95%;
+		margin:0 auto;
+	}
 	
+	.content {
+		width:750px;
+		margin:20px auto;
+		
+	}
+	
+	nav.short ul {
+		width:700px;
+		margin:0 auto;
+	}
+
+	nav.short li {
+		width:33%;
+	border-bottom:1px solid gray;
+	  float: left;
+	  margin-bottom: 0.2em;
+	}
+	
+	/* == ========================================
+		nav bar
+	========================================================================== */
 	.home-link {
 		display:block;
 	}
@@ -658,7 +1013,7 @@ images on hover for homepage
 		left:-50%;
 	}
 	
-	/*  Tabs adjusment for larger screens from www.getskeleton.com
+	/*  Tabs adjusment for larger screens
 	================================================== */
 		ul.tabs {  }
 		ul.tabs li { 
@@ -687,29 +1042,107 @@ images on hover for homepage
 					border-right:2px solid #148AFF; 
 			}
 			
+			
+			/* Nav adjusment for larger screens
+			================================================== */
+
+			.other .img-nav {
+				margin-bottom:5px;
+			}
+			
+			.img-nav ul{
+			    -moz-transition: all 0.5s ease-in-out 0.45s;  
+			    -o-transition: all 0.5s ease-in-out 0.45s;  
+			   	-webkit-transition: all 0.5s ease-in-out 0.45s;  
+			    -ms-transition: all 0.5s ease-in-out 0.45s;  
+			    transition: all 0.5s ease-in-out 0.45s;  
+			}
+			
+			.home .img-nav h1 {
+				padding:0px 0 0px 0;
+			}
+			
+			.other .img-nav ul{
+				margin-top:-35px;
+			}
+			
+
+			.other .img-nav h1 img {
+				position:absolute;
+				display:block;
+				right:0;
+				width:250px;
+				height:auto;
+				top:5px;
+				z-index:-1;
+			}
+
+			.other .img-nav:hover ul{
+				margin-top:0px;
+			}
+			
+			.other .img-nav h1 {
+					margin-left:20px;
+					font-size:2.2em;
+					text-align:left;
+					padding:10px 0 15px 0;
+			     -moz-transition: all 0.3s ease-in-out 0.45s;  
+				    -o-transition: all 0.3s ease-in-out 0.45s;  
+				    -webkit-transition: all 0.3s ease-in-out 0.45s;  
+				    -ms-transition: all 0.3s ease-in-out 0.45s;  
+				    transition: all 0.3s ease-in-out 0.45s;  
+					opacity:.8;
+			}
+				
+			.other .img-nav:hover h1 {
+					opacity:.01;
+			}
+
+		
+		/* == ========================================
+			ISOtope Homepage Adjustments
+		========================================================================== */	
 	/* Teams on homepage adjusment for larger screens
 	================================================== */
-			.home section.teams {
+			
+			#container {
+				width:750px;
 				margin:0 auto;
-				width:860px;
 			}
+			
+			.element {
+		  		float: left;
+				width:350px;
+				height:250px;
+			    margin:5px auto;
+			}
+			
+			.element.large .description article {
+				min-height:300px;
+			}
+			.element .symbol img {
+				width: auto;
+				height: 225px;
+			}
+			
+			.portland img {
+				width:100%;
+			}
+			
+			/* hack for small logos */
 		
-			.teams article {
-				text-align:justify;
-				float:left;
-				width:400px;
-				margin:10px 10px;
-				border-bottom:none;
+			.element.dogfight img{
+					margin-top:20px;
 			}
-			.teams h2 {
-				text-align:center;
+			
+
+			.element.schwa img{
+				margin-top:30px;
 			}
-		/* Nav adjusment for larger screens
-		================================================== */
-	.home .img-nav li:hover img {
-		top:50px;
-	}
-	
+			.element.dogfight {
+				height:150px;
+			}
+
 	
 	.contact {
 		width:700px;
@@ -718,20 +1151,75 @@ images on hover for homepage
 
 }
 
-@media only screen and (min-width: 1024px) { 
-	/* Desktops (1024px+) styles go here */
+@media only screen and (min-width: 1090px) { 
+	/* Desktops (1090px+) styles go here */
+	
+	
+	/* == ========================================
+		team pages styling
+	========================================================================== */
+	.page-content {
+		width:95%;
+		margin:0 auto;
+	}
+	
+	.rhino .content {
+		width:800px;
+		margin-left:20px;
+	}
+	
+	
+	aside.twitter {
+		width:250px;
+		position:absolute;
+		right:-280px;
+		top:0px;
+		
+	}
+	
+	
+	/* == ========================================
+			navigation
+	========================================================================== */
 		.home-link img {
 			padding:0 10px;
 		}
+	/* == ========================================
+		ISOtope Homepage Adjustments
+	========================================================================== */
 		
-		section.portland {
-			z-index:0;
-			position:relative;
-			bottom:0px;
-			width:1000px;
-			margin-left:-500px;
-			left:50%;
+		#container {
+			width:1090px;
 		}
+		
+		.element {
+	  		float: left;
+			width:350px;
+			height:250px;
+		    margin:0px auto;
+		}	
+		.element.large .description article{
+				min-height:410px;
+		}
+		
+		.portland img{
+			max-width:800px;
+		}
+		
+			
+		/* hack for small logos */
+		.element.dogfight, 
+		.element.burnside,
+		.element.knife {
+			height:150px;
+		}
+		
+		.element.dogfight img{
+			margin-top:30px;
+		} 
+		
+		
+		
 
 }
 /* ========================================>WEBKIT only */
