@@ -2,11 +2,9 @@
 layout: post 
 title: About
 
-meta_description: 
+meta_description: About Burnside Master's Ultimate Frisbee team. Burnside is a Portland based team.
 ---
 
-Knife Fight was founded in 2003 as a chance to give Portland-based college players a chance to team up
-with college-season rivals. Now heading into the 2011 season, Knife Fight is looking for young players who 
-want to play high-level ultimate over the summer, and welcomes older players who want to help improve the pool of mens' club talent in Portland.
+Burnside is entering their third campaign, aiming for a bid to Nationals after falling short in the game to go in 2010. Masters is open to any player that will turn 33 or older in this calendar year. We play Masters only pickup every weekend throughout the year, and then buckle down for actual practices in the weeks before tournaments.
 
-__Knife Fight 2011__ has taken up the challenge to fill a dual role in the Portland club scene. In essence, we don't believe that building and fielding the strongest club team possible precludes us from providing a place where young Portland ultimate players can work  hard on developing club-level skills.
+We will be attending Solstice, Open Sectionals and Masters Regionals as well as putting on our own Masters tournament.

@@ -155,7 +155,26 @@ h3 {
 small {
 	font-size: 0.625em; /* 10px */
 	margin: 0 0 2.6em;
+
 }
+/* =============================================================================
+	  Fonts
+========================================================================== */
+		
+		@font-face {
+		    font-family: 'PowellAntiqueRegular';
+		    src: url('{{ site.fontpath }}/PowellAntique-webfont.eot');
+		    src: url('{{ site.fontpath }}/PowellAntique-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('{{ site.fontpath }}/PowellAntique-webfont.woff') format('woff'),
+		         url('{{ site.fontpath }}/PowellAntique-webfont.ttf') format('truetype'),
+		         url('{{ site.fontpath }}/PowellAntique-webfont.svg#PowellAntiqueRegular') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+
+
+
 
 /* =============================================================================
    Lists
@@ -310,6 +329,19 @@ td { vertical-align: top; }
 	.lower {
 		text-transform:lowercase;
 	}
+	
+	
+	.inset {
+		font-weight:bold;
+			font-variant:small-caps;
+		color: rgba({{ site.main_color_rgb }}, .06);
+		  text-shadow: rgba(0,0,0,0.15) -1px 0, rgba(255,255,255, 0.8) 0px 2px 1px, rgba({{ site.main_color_rgb }},0.05) -1px -1px;
+		font-family: 'PowellAntiqueRegular', Arial, sans-serif;letter-spacing: 0;
+	}	
+
+	.fontface {
+		font-variant:small-caps;font-family: 'PowellAntiqueRegular', Arial, sans-serif;letter-spacing: 0;}
+
 
 	.no-bullet li{
 		list-style-type:none;
@@ -465,13 +497,6 @@ footer {
 }
 
 
-.inset {
-	font-weight:bold;
-	color: rgba({{ site.main_color_rgb }}, .06);
-	  font-family: Rockwell, Georgia, "Times New Roman", Times, serif;
-	  text-shadow: rgba(0,0,0,0.15) -1px 0, rgba(255,255,255, 0.8) 0px 2px 1px, rgba({{ site.main_color_rgb }},0.05) -1px -1px;
-	}
-	
 	.contact {
 		width:90%;
 		margin:0 auto;
@@ -513,6 +538,11 @@ footer {
 		padding:10px 30px;
 	}
 	
+	.page-content section img {
+		 height:auto;
+			width:100%;
+	}
+	
 	.page-content object {
 		width:100%;
 	}
@@ -530,11 +560,12 @@ footer {
 	}
 	
 	nav.short ul {
-		width:380px;
+		width:100%;
 		margin:0 auto;
 	}
 
 	nav.short li {
+		width:33%;
 	border-bottom:1px solid gray;
 	  float: left;
 	  margin-bottom: 0.2em;
@@ -627,22 +658,27 @@ stays visible for homepage, hids for rest (in desktop mode)
 	  .img-nav {
 			width:100%;
 			position:relative;
-		     -moz-transition: all 0.5s ease-in-out 0.35s;  
-		       -o-transition: all 0.5s ease-in-out 0.35s;  
-		  -webkit-transition: all 0.5s ease-in-out 0.35s;  
-		      -ms-transition: all 0.5s ease-in-out 0.35s;  
-		          transition: all 0.5s ease-in-out 0.35s; 
-		 	background-color:#fff;
+		     -moz-transition: all 0.3s ease-in-out 0.15s; 
+		       -o-transition: all 0.3s ease-in-out 0.15s;  
+		  -webkit-transition: all 0.3s ease-in-out 0.15s;  
+		      -ms-transition: all 0.3s ease-in-out 0.15s;  
+		          transition: all 0.3s ease-in-out 0.15s;
 		}
 		.home .img-nav h1 {
 			padding:35px 0 20px 0;
 			
 		}
 		
+		.other .img-nav {
+ 		background-color:#fff;
+			
+		}
+		
 		.other .img-nav h1 {
 			padding:200px 0 20px 0px;
-			font-size:2.5em;
+			font-size:2.5em; 
 		}
+		
 		
 		.other .img-nav h1 img {
 			display:none;
@@ -655,11 +691,11 @@ stays visible for homepage, hids for rest (in desktop mode)
 		
 		.img-nav ul li a{
 				opacity:.5;
-			     -moz-transition: all 0.5s ease-in-out 0.35s;  
-			       -o-transition: all 0.5s ease-in-out 0.35s;  
-			  -webkit-transition: all 0.5s ease-in-out 0.35s;  
-			      -ms-transition: all 0.5s ease-in-out 0.35s;  
-			          transition: all 0.5s ease-in-out 0.35s;  
+			     -moz-transition: all 0.3s ease-in-out 0.15s;  
+			       -o-transition: all 0.3s ease-in-out 0.15s;  
+			  -webkit-transition: all 0.3s ease-in-out 0.15s;  
+			      -ms-transition: all 0.3s ease-in-out 0.15s;  
+			          transition: all 0.3s ease-in-out 0.15s;  
 
 			
 		}
@@ -871,6 +907,7 @@ stays visible for homepage, hids for rest (in desktop mode)
 				text-align:center;
 				padding:0px;
 				width:270px;
+				margin-left:-.7em;
 			}
 			
 			.option-set .selected {
@@ -879,7 +916,8 @@ stays visible for homepage, hids for rest (in desktop mode)
 			}
 			
 			ul.option-set li {
-				width:60px;
+				width:23%;
+				font-size:.9em;
 			}
 			
 			/* Teams on homepage 
@@ -895,9 +933,6 @@ stays visible for homepage, hids for rest (in desktop mode)
 			 	font-size:18px;
 			}
 
-			.teams article .inset {
-				font-size:2.5em;
-			}
 
 			/* End: Recommended Isotope styles */		
 /* ==|== non-semantic helper classes ========================================
@@ -936,7 +971,8 @@ stays visible for homepage, hids for rest (in desktop mode)
 @media only screen and (min-width: 480px) {
 	/* Wide mobile (480px+) styles go here */
 		
-		#container {
+		.home .inset {
+			margin-top:70px;
 		}
 	
 }
@@ -944,6 +980,9 @@ stays visible for homepage, hids for rest (in desktop mode)
 @media only screen and (min-width: 768px) { 
 	/* Tablets/netbooks (768px+) styles go here */
 	.post {
+	}
+	.home .inset {
+		margin-top:-50px;
 	}
 	
 	/* == ========================================
@@ -1108,6 +1147,10 @@ stays visible for homepage, hids for rest (in desktop mode)
 	/* Teams on homepage adjusment for larger screens
 	================================================== */
 			
+			.teams {
+				margin-top:-100px;
+			}
+			
 			#container {
 				width:750px;
 				margin:0 auto;
@@ -1166,11 +1209,7 @@ stays visible for homepage, hids for rest (in desktop mode)
 		margin:0 auto;
 	}
 	
-	.rhino .content {
-		width:800px;
-		margin-left:20px;
-	}
-	
+
 	
 	aside.twitter {
 		width:250px;
@@ -1213,7 +1252,7 @@ stays visible for homepage, hids for rest (in desktop mode)
 		/* hack for small logos */
 		.element.dogfight, 
 		.element.burnside,
-		.element.knife {
+		.element.knifefight {
 			height:150px;
 		}
 		

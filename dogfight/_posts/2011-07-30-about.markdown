@@ -2,11 +2,7 @@
 layout: post 
 title: About
 
-meta_description: 
+meta_description: About the Dogfight mixed Ultimate Frisbee team. Dogfight is a Portland based team.
 ---
 
-Knife Fight was founded in 2003 as a chance to give Portland-based college players a chance to team up
-with college-season rivals. Now heading into the 2011 season, Knife Fight is looking for young players who 
-want to play high-level ultimate over the summer, and welcomes older players who want to help improve the pool of mens' club talent in Portland.
-
-__Knife Fight 2011__ has taken up the challenge to fill a dual role in the Portland club scene. In essence, we don't believe that building and fielding the strongest club team possible precludes us from providing a place where young Portland ultimate players can work  hard on developing club-level skills.
+Dogfight has earned bragging rights in the mixed ultimate world, beating national caliber teams last year. Our third season brings a solid crew of returners as well as talented new blood. Sarasota is in our sights!

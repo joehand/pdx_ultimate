@@ -1,119 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/</loc>
-      <lastmod>2011-08-05</lastmod>
+      <loc>http://localhost:4000/</loc>
+      <lastmod>2011-08-07</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1</priority>
    </url>
 
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/knifefight/about</loc>
+      <loc>http://localhost:4000/knifefight/about</loc>
       <lastmod>2011-08-05</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/rhino/about</loc>
+      <loc>http://localhost:4000/rhino/about</loc>
       <lastmod>2011-08-04</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/rhino/contact</loc>
+      <loc>http://localhost:4000/rhino/contact</loc>
       <lastmod>2011-08-03</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/knifefight/roster</loc>
+      <loc>http://localhost:4000/knifefight/roster</loc>
       <lastmod>2011-08-02</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/burnside/media</loc>
+      <loc>http://localhost:4000/burnside/media</loc>
       <lastmod>2011-08-02</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/rhino/media</loc>
+      <loc>http://localhost:4000/rhino/media</loc>
       <lastmod>2011-08-02</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/schwa/media</loc>
+      <loc>http://localhost:4000/schwa/media</loc>
       <lastmod>2011-08-02</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/dogfight/media</loc>
+      <loc>http://localhost:4000/dogfight/media</loc>
       <lastmod>2011-08-02</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/knifefight/sponsors</loc>
+      <loc>http://localhost:4000/knifefight/sponsors</loc>
       <lastmod>2011-08-01</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/schwa/roster</loc>
+      <loc>http://localhost:4000/schwa/roster</loc>
       <lastmod>2011-08-01</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/dogfight/roster</loc>
+      <loc>http://localhost:4000/dogfight/roster</loc>
       <lastmod>2011-08-01</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/burnside/roster</loc>
+      <loc>http://localhost:4000/burnside/roster</loc>
       <lastmod>2011-08-01</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/contact</loc>
+      <loc>http://localhost:4000/contact</loc>
       <lastmod>2011-08-01</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/schwa/about</loc>
+      <loc>http://localhost:4000/schwa/about</loc>
       <lastmod>2011-07-30</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/dogfight/about</loc>
+      <loc>http://localhost:4000/dogfight/about</loc>
       <lastmod>2011-07-30</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://joehand.github.com/pdx_ultimate/burnside/about</loc>
+      <loc>http://localhost:4000/burnside/about</loc>
       <lastmod>2011-07-30</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>

@@ -2,11 +2,12 @@ markdown: rdiscount
 pygments: true
 permalink: /:categories/:title
 
-home_url: http://joehand.github.com/pdx_ultimate
+home_url: http://localhost:4000
 
-jspath: http://joehand.github.com/pdx_ultimate/assets/js
-csspath: http://joehand.github.com/pdx_ultimate/assets/css
-imgpath: http://joehand.github.com/pdx_ultimate/assets/img
+jspath: http://localhost:4000/assets/js
+csspath: http://localhost:4000/assets/css
+imgpath: http://localhost:4000/assets/img
+fontpath: http://localhost:4000/assets/fonts
 
 name: "Portland Club Ultimate"
 author: "Joe Hand"

@@ -3,5 +3,7 @@ layout: post
 title: About
 
 body_class: rhino
-meta_description: 
+meta_description: About Rhino Ultimate Frisbee club team. Rhino represents Portland and Oregon in the men's club scene.
 ---
+
+Rhino stands as Oregon's elite men's club team. Comprised of young raw athleticism and savvy veteran play, Rhino continues to grow by leaps and bounds. This year's goal is simple, earn a trip back to our native land in Sarasota FL.

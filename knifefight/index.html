@@ -5,26 +5,12 @@ title: South Portland Knife Fight
 meta_description: 
 ---
 
-<div class="page-content">
+<div class="content">
 
 	<section>
-	<img id="hoverimg" src="./img/home.jpg" width="500" height="auto" align="center">
+	<img src="./img/home.jpg">
 	
-	<!-- Images to Preload -->
-  <div id="preloaded-images" style="position: absolute; left: -1000em; ">
-  </div>
+	{% include twitter.html %}
 	</section>
 	
 </div> <!-- end of #page-content -->
-
-<!--Hover image replace-->
-  <script>
-    <!-- after loading adds hover effect to links (should add ID to ul to avoid conflicts)-->
-    $(document).ready(function() {
-      $("li a").hover(function(){$("#hoverimg").attr("src", "./img/"+$(this).html.toLowerCase()+".jpg");},function(){$("#hoverimg").attr("src", "./img/home.jpg");});
-    });
-    <!-- Get the images that corespond to the links and preloads them -->
-    $("li a").each(function (i) {	
-      $("#preloaded-images").append('<img src="./img/'+$(this).html.toLowerCase()+'.jpg" width="1" height="1" alt="preloaded image" />');
-    });  
-  </script>

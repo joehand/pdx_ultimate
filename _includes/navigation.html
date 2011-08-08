@@ -1,13 +1,13 @@
 
 <nav class="img-nav">
-<h1 class="small-caps inset remove-bottom"><a class="small-caps inset" href="{{ site.home_url }}" title="Home">pdx ultimate</a>
-	<img class="remove-bottom"src="{{ site.imgpath }}/bridge.png" width="866" height="194" alt="Portland"/></h1>
+<h1 class="remove-bottom"><a class="inset fontface" href="{{ site.home_url }}" title="Home">pdx ultimate</a>
+	<img class="remove-bottom" src="{{ site.imgpath }}/bridge.png" width="866" height="194" alt="Portland"/></h1>
 <ul class="tabs no-bullet floated clearfix"> 
-<h5 class="home-link"><a href="{{ site.home_url }}" title="Home"><img src="{{ site.imgpath }}/home.png" width="48" height="48"/></a></h5>
+<h5 class="home-link"><a class="fontface" href="{{ site.home_url }}" title="Home"><img src="{{ site.imgpath }}/home.png" width="48" height="48"/></a></h5>
 {% for category in site.categories %} {% if page.url contains category[0] %}
-	<li class="active"><a href="{{ site.home_url }}/{{ category[0] }}/">{{ category[0] }}</a></li>
+	<li class="active"><a class="fontface" href="{{ site.home_url }}/{{ category[0] }}/">{{ category[0] }}</a></li>
 	{% else %}
-  	<li><a href="{{ site.home_url }}/{{ category[0] }}/">{{ category[0] }}</a></li>{% endif %}{% endfor %} 
+  	<li><a class="fontface" href="{{ site.home_url }}/{{ category[0] }}/">{{ category[0] }}</a></li>{% endif %}{% endfor %} 
 </ul>
 
 </nav>
