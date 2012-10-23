@@ -4,3 +4,33 @@ title: Roster
 
 meta_description:
 ---
+
+<table>
+<tr><th>Name</th><th>Number</th><th>College</th><th>Occupation</th><th>Former Teams</th><th>Hometown</th><th>Age</th></tr>
+<tr><td>Erin Maloney</td><td>1</td><td>Valpraiso</td><td>Grad Student</td><td></td><td>"Erie</td><td> PA"</td><td>27</td></tr>
+<tr><td>Trish Thoms</td><td>2</td><td>Colorado College</td><td>Physician Assistant</td><td>Barrio</td><td>"Rhinelander</td><td> WI"</td><td>30</td></tr>
+<tr><td>Bre Austin</td><td>3</td><td>Whitman</td><td>Teacher</td><td></td><td></td><td>31</td></tr>
+<tr><td>Jill Hutchinson</td><td>4</td><td>Wisconsin</td><td>Engineer</td><td>"MadHaus</td><td> Madison Jazz</td><td> Nemesis"</td><td>"St. Paul</td><td> MN"</td><td>30</td></tr>
+<tr><td>Sara York</td><td>5</td><td>Oregon State</td><td>Engineer</td><td></td><td>"Corvallis</td><td> OR"</td><td>31</td></tr>
+<tr><td>Chloe Mandell</td><td>6</td><td>Dickinson</td><td>Rock Climbing Instructor</td><td>"Jive Turkeys</td><td> Naughty Kids"</td><td>"Portland</td><td> OR"</td><td>25</td></tr>
+<tr><td>Beckie Zipp</td><td>7</td><td>Oregon State</td><td>Manager</td><td>OSU Divas</td><td>"Corvallis</td><td> OR"</td><td>25</td></tr>
+<tr><td>Marienna Richter</td><td>9</td><td>Truman State</td><td>Grad Student</td><td>TSUnami</td><td>"Geneva</td><td> IL"</td><td>24</td></tr>
+<tr><td>Shahnnen “Shox” Knox</td><td>10</td><td>Montana</td><td>Project Manager</td><td>"Mental Toss Flycoons</td><td> Keggers</td><td> Dogfight"</td><td>"Missoula</td><td> MT"</td><td>29</td></tr>
+<tr><td>Emily Flanders</td><td>11</td><td>Illinois State</td><td>Athletics Supervisor - Boys & Girls Club</td><td>"Illinois State</td><td> Prion</td><td> Dogfight"</td><td>"Rockford</td><td> IL"</td><td>24</td></tr>
+<tr><td>Laura Sard</td><td>12</td><td>Reed</td><td>Airport Line Service Technician </td><td></td><td>"Arlington</td><td> MA"</td><td>25</td></tr>
+<tr><td>Jenny Tibbals</td><td>14</td><td>University of Porltand</td><td>Nurse</td><td>UP</td><td>"Moscow</td><td> ID"</td><td>25</td></tr>
+<tr><td>Sarah ""Serbia"" Read-Brown"</td><td>15</td><td>Lewis & Clark</td><td>Research Assistant </td><td>Artemis</td><td>"Minnetonka</td><td> MN"</td><td>23</td></tr>
+<tr><td>Delia Chiu</td><td>17</td><td>Stanford</td><td>PhD Student</td><td>"Stanford Superfly</td><td> Milder Norden</td><td> Jinx</td><td> German National Team"</td><td>"New York</td><td> NY"</td><td>33</td></tr>
+<tr><td>Kelsey Colpitts</td><td>19</td><td>Lewis & Clark</td><td>Research Assistant </td><td>"Artemis</td><td> Dogfight"</td><td>"Seattle</td><td> WA"</td><td>24</td></tr>
+<tr><td>Alex Ode</td><td>20</td><td>Oregon</td><td>Student</td><td>Fugue </td><td>"Boise</td><td> ID"</td><td>19</td></tr>
+<tr><td>Arthi Padmanabahn</td><td>22</td><td>UC - San Diego</td><td>American Girl</td><td></td><td>"Palmdale</td><td> CA"</td><td>30</td></tr>
+<tr><td>Meghan Miller</td><td>24</td><td>Carleton</td><td>Research Assistant </td><td>"Syzygy</td><td> Divas</td><td> Dogfight"</td><td>"Corvallis</td><td> OR"</td><td>26</td></tr>
+<tr><td>Natalie Wu</td><td>26</td><td>Berkeley</td><td>Medical Student</td><td>"Pie Queens</td><td> Skyline</td><td> Slackjaw</td><td> Dutch Rudder"</td><td>"Bellevue</td><td> WA"</td><td>27</td></tr>
+<tr><td>Lora Liegel</td><td>28</td><td>Oregon State</td><td>Farmer</td><td>OSU Divas</td><td>"Corvallis</td><td> OR"</td><td>28</td></tr>
+<tr><td>Katie Kern</td><td>30</td><td>Elmhurst</td><td>Nurse</td><td>"Pen15</td><td> Triceratops</td><td> Dogfight"</td><td>"Portland</td><td> OR"</td><td>32</td></tr>
+<tr><td>Tova Peltz</td><td>36</td><td>MIT</td><td>Engineer</td><td>Pleistocene Supernova</td><td>"Portland</td><td> OR"</td><td>35</td></tr>
+<tr><td>Morgan Huey</td><td>77</td><td>Oregon State</td><td>Certified Nursing Assistant </td><td>OSU</td><td>"Lafayette</td><td> CO"</td><td>24</td></tr>
+<tr><td>Jenica Villamor</td><td>87</td><td>Oregon</td><td>News Reporter</td><td>"Fugue</td><td> Further"</td><td>"Beaverton</td><td> OR"</td><td>24</td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Coach Danny Quarrell</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
