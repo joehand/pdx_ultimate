@@ -1,8 +1,0 @@
---- 
-layout: post 
-title: About
-
-meta_description: 
----
-
-Schwa is Portland's elite women's team. We travel around the Northwest to play against the regions other premier teams.
