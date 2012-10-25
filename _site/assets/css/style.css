@@ -160,11 +160,11 @@ small {
 		
 		@font-face {
 		    font-family: 'PowellAntiqueRegular';
-		    src: url('http://localhost:4000/assets/fonts/PowellAntique-webfont.eot');
-		    src: url('http://localhost:4000/assets/fonts/PowellAntique-webfont.eot?#iefix') format('embedded-opentype'),
-		         url('http://localhost:4000/assets/fonts/PowellAntique-webfont.woff') format('woff'),
-		         url('http://localhost:4000/assets/fonts/PowellAntique-webfont.ttf') format('truetype'),
-		         url('http://localhost:4000/assets/fonts/PowellAntique-webfont.svg#PowellAntiqueRegular') format('svg');
+		    src: url('http://pdxultimate.org/assets/fonts/PowellAntique-webfont.eot');
+		    src: url('http://pdxultimate.org/assets/fonts/PowellAntique-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('http://pdxultimate.org/assets/fonts/PowellAntique-webfont.woff') format('woff'),
+		         url('http://pdxultimate.org/assets/fonts/PowellAntique-webfont.ttf') format('truetype'),
+		         url('http://pdxultimate.org/assets/fonts/PowellAntique-webfont.svg#PowellAntiqueRegular') format('svg');
 		    font-weight: normal;
 		    font-style: normal;
 
@@ -621,6 +621,47 @@ footer {
 		margin:0 auto;
 	}
 	
+
+	/* == =========schwa================== */
+	.schwa nav.short {
+		display:none;
+	}
+
+	.schwa aside.twitter {
+		top:-110px;
+	}
+
+	.schwa aside.twitter a:hover {
+		text-decoration: none;
+		border:0px;
+	}
+
+	.schwa aside.twitter img {
+		max-width:300px;
+	}
+
+	.schwa table {
+		text-align:center;
+	}
+
+
+	.schwa table tr{
+		border-bottom:1px solid #98A6BA;
+		padding-bottom:2px;
+	}
+
+
+
+	.schwa table td.s2{
+		color:#023152;
+		font-weight:bold;
+	}
+
+	.schwa table td{
+		max-width:150px;
+		padding:2px;
+	}
+
 /* == ========================================
 article sytling
 ========================================================================== */

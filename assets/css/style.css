@@ -624,6 +624,47 @@ footer {
 		margin:0 auto;
 	}
 	
+
+	/* == =========schwa================== */
+	.schwa nav.short {
+		display:none;
+	}
+
+	.schwa aside.twitter {
+		top:-110px;
+	}
+
+	.schwa aside.twitter a:hover {
+		text-decoration: none;
+		border:0px;
+	}
+
+	.schwa aside.twitter img {
+		max-width:300px;
+	}
+
+	.schwa table {
+		text-align:center;
+	}
+
+
+	.schwa table tr{
+		border-bottom:1px solid #98A6BA;
+		padding-bottom:2px;
+	}
+
+
+
+	.schwa table td.s2{
+		color:#023152;
+		font-weight:bold;
+	}
+
+	.schwa table td{
+		max-width:150px;
+		padding:2px;
+	}
+
 /* == ========================================
 article sytling
 ========================================================================== */

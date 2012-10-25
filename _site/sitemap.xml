@@ -1,120 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>http://localhost:4000/</loc>
-      <lastmod>2012-10-23</lastmod>
+      <loc>http://pdxultimate.org/</loc>
+      <lastmod>2012-10-24</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1</priority>
    </url>
 
    <url>
-      <loc>http://localhost:4000/schwa/about</loc>
+      <loc>http://pdxultimate.org/schwa/about</loc>
       <lastmod>2011-08-30</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://localhost:4000/knifefight/about</loc>
+      <loc>http://pdxultimate.org/knifefight/about</loc>
       <lastmod>2011-08-05</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://localhost:4000/rhino/about</loc>
+      <loc>http://pdxultimate.org/rhino/about</loc>
       <lastmod>2011-08-04</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://localhost:4000/rhino/contact</loc>
+      <loc>http://pdxultimate.org/rhino/contact</loc>
       <lastmod>2011-08-03</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://localhost:4000/knifefight/roster</loc>
+      <loc>http://pdxultimate.org/knifefight/roster</loc>
       <lastmod>2011-08-02</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://localhost:4000/dogfight/media</loc>
+      <loc>http://pdxultimate.org/burnside/media</loc>
       <lastmod>2011-08-02</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://localhost:4000/burnside/media</loc>
+      <loc>http://pdxultimate.org/dogfight/media</loc>
       <lastmod>2011-08-02</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://localhost:4000/rhino/media</loc>
+      <loc>http://pdxultimate.org/rhino/media</loc>
       <lastmod>2011-08-02</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://localhost:4000/knifefight/sponsors</loc>
+      <loc>http://pdxultimate.org/knifefight/sponsors</loc>
       <lastmod>2011-08-01</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://localhost:4000/burnside/roster</loc>
+      <loc>http://pdxultimate.org/dogfight/roster</loc>
       <lastmod>2011-08-01</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://localhost:4000/schwa/roster</loc>
+      <loc>http://pdxultimate.org/schwa/roster</loc>
       <lastmod>2011-08-01</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://localhost:4000/dogfight/roster</loc>
+      <loc>http://pdxultimate.org/burnside/roster</loc>
       <lastmod>2011-08-01</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://localhost:4000/contact</loc>
+      <loc>http://pdxultimate.org/contact</loc>
       <lastmod>2011-08-01</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://localhost:4000/burnside/about</loc>
+      <loc>http://pdxultimate.org/dogfight/about</loc>
       <lastmod>2011-07-30</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
-      <loc>http://localhost:4000/dogfight/about</loc>
+      <loc>http://pdxultimate.org/burnside/about</loc>
       <lastmod>2011-07-30</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.9</priority>
-   </url>
-
-   <url>
-      <loc>http://localhost:4000/schwa/media</loc>
-      <lastmod>2011-07-02</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
